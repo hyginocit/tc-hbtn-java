@@ -1,4 +1,4 @@
-public class NumeroPares {
+public class NumerosPares {
         public static void main(String[] args) {
             for (int i = 0; i < 98; i++){
 
