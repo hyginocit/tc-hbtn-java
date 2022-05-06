@@ -9,7 +9,12 @@ public class Empregado {
         }
     }
     public double calcularSalarioTotal(Departamento departamento){
-        return salarioFixo + salarioFixo * 0.1;
+        if (departamento.getValorAtingidoMeta() >= departamento.getValorMeta()){
+            return salarioFixo + salarioFixo * 0.1;
+        } else {
+            return salarioFixo;
+        }
+
     }
 
     public double getSalarioFixo() {
