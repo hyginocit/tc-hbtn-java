@@ -3,14 +3,17 @@ public class Gerente extends Empregado{
         super(salarioFixo);
     }
 
-    public double calcularBonus(double salarioFixo, double valorMetaAtingida, double valorMeta, Departamento departamento){
-
-        if (departamento.getValorAtingidoMeta() >= departamento.getValorMeta()){
-            double diferenca = valorMetaAtingida - valorMeta * 0.01;
-            return salarioFixo + salarioFixo * 0.2 + diferenca;
+    @Override
+    public double calcularBonus(Departamento departamento) {
+        if(departamento.alcancouMeta()){
+            return (getSalarioFixo() * 0.2) + ((departamento.getValorAtingidoMeta()) - departamento.getValorMeta()) * 0.01;
         } else {
-            return salarioFixo;
+            return 0;
         }
-
     }
-}
+    @Override
+    public double calcularSalarioTotal(Departamento departamento) {
+        return getSalarioFixo() + calcularBonus(departamento);
+    }
+ }
+

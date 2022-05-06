@@ -15,11 +15,13 @@ public class Departamento {
         this.valorAtingidoMeta = valorAtingidoMeta;
     }
 
-    public boolean alcancouMeta(double valorMeta, double valorAtingidoMeta){
-        if (valorMeta >= valorAtingidoMeta){
+    public boolean alcancouMeta(){
+        if (valorMeta <= valorAtingidoMeta){
             return true;
-        } else {
-            return false;
         }
+            return false;
+
     }
+
+
 }
