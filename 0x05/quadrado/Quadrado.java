@@ -8,9 +8,9 @@ public class Quadrado extends Retangulo{
     public void setLado(double lado) {
         if (this.lado < 0){
             throw new IllegalArgumentException("Lado deve ser maior ou igual a 0");
-        } else {
-            this.lado = lado;
         }
+            this.lado = lado;
+
     }
     @Override
     public String toString() {
