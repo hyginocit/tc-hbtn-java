@@ -3,6 +3,7 @@ import java.lang.reflect.Modifier;
 
 public class Program {
     public static void main(String[] args) {
+
         Quadrado quadrado = new Quadrado();
 
         quadrado.setLado(10);
