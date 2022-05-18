@@ -1,4 +1,8 @@
 package comida;
 
-public class Cram {
+public class Cram extends Comida{
+
+    public Cram(){
+        super(2);
+    }
 }

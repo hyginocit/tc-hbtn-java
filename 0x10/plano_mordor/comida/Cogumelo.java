@@ -1,7 +1,7 @@
 package comida;
 
-public class Cogumelos extends Comida{
-    public Cogumelos(){
+public class Cogumelo extends Comida{
+    public Cogumelo(){
         super(-10);
     }
 }

@@ -1,4 +1,7 @@
 package comida;
 
-public class BoloDeMel {
+public class BoloDeMel extends Comida{
+    public BoloDeMel(){
+        super(5);
+    }
 }

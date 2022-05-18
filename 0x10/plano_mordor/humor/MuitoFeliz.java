@@ -1,2 +1,4 @@
-package humor;public class MuitoFeliz {
+package humor;
+
+public class MuitoFeliz extends Humor{
 }

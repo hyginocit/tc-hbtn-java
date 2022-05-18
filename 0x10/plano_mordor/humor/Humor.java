@@ -1,4 +1,5 @@
 package humor;
 
-public class Humor {
+public abstract class Humor {
+
 }

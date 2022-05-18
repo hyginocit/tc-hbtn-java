@@ -1,2 +1,4 @@
-package humor;public class Triste {
+package humor;
+
+public class Triste extends Humor{
 }
