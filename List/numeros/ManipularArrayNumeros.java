@@ -16,8 +16,10 @@ public class ManipularArrayNumeros {
     }
 
     public static void removerNumero(List<Integer> numeros, int numero){
+
         int contem = buscarPosicaoNumero(numeros, numero);
-        if (contem == -1){
+
+        if (contem != -1) {
             numeros.remove(contem);
         } else {
             throw new IllegalArgumentException("Numero nao encontrado na lista");
