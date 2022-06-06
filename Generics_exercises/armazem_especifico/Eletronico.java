@@ -1,7 +1,4 @@
-package armazem_especifico;
-
 public class Eletronico {
-
     private String descricao;
     private double valor;
 
@@ -10,8 +7,15 @@ public class Eletronico {
         this.valor = valor;
     }
 
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public double getValor() {
+        return valor;
+    }
     @Override
-    public String toString() {
-        return String.format("[%s] R$ %.6f", descricao, valor );
+    public String toString(){
+        return "[" + this.descricao + "]" + " R$ " + String.format("%.6f", this.valor);
     }
 }

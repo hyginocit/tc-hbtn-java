@@ -1,8 +1,10 @@
-package armazem_especifico;
-
-public class ArmazemDeEletronico<T> extends Armazem<Eletronico> {
+public class ArmazemDeEletronico extends Armazem<Eletronico> {
     @Override
     public Eletronico obterDoInventario(String nome) {
-        return super.obterDoInventario(nome);
+        return this.getEstoque().get(nome);
+    }
+    @Override
+    public void adicionarAoInventario(String nome, Eletronico valor) {
+        this.getEstoque().put(nome, valor);
     }
 }

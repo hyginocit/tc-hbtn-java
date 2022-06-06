@@ -1,19 +1,15 @@
-package armazem_especifico;
-
 import java.util.HashMap;
 import java.util.Map;
 
 public abstract class Armazem<T> implements Armazenavel<T> {
-    private Map<String, T> itens= new HashMap<>();
+    private Map<String, T> estoque;
 
-    @Override
-    public void adicionarAoInventario(String nome, T t) {
-        itens.put(nome, t);
+    public Armazem(){
+        this.estoque = new HashMap<String, T>();
     }
 
-    @Override
-    public T obterDoInventario(String nome) {
-       return itens.get(nome);
+    public Map<String, T> getEstoque() {
+        return estoque;
     }
-
 }
+

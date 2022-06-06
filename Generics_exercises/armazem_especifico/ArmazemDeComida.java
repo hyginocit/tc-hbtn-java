@@ -1,9 +1,10 @@
-package armazem_especifico;
-
-public class ArmazemDeComida<T> extends Armazem<Comida> {
-
+public class ArmazemDeComida extends Armazem<Comida> {
     @Override
     public Comida obterDoInventario(String nome) {
-        return super.obterDoInventario(nome);
+        return this.getEstoque().get(nome);
+    }
+    @Override
+    public void adicionarAoInventario(String nome, Comida valor){
+        this.getEstoque().put(nome, valor);
     }
 }
