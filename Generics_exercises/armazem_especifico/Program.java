@@ -1,10 +1,4 @@
-<<<<<<< HEAD
 import java.util.*;
-=======
-import java.util.Locale;
-
-@SuppressWarnings("unchecked")
->>>>>>> be5137badf649e0af2f424eb4ba634dbbe3df307
 public class Program {
     public static void main(String[] args) {
         Locale.setDefault(new Locale("pt", "BR"));
