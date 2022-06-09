@@ -5,15 +5,15 @@ import java.util.function.Supplier;
 
 public class Produto {
     private String nome;
-    private double preco;
-    public double percentualMarkUp = 0.1;
+    private Double preco;
+    public Double percentualMarkUp = 0.1;
 
     public Produto(double preco,String nome) {
         this.preco = preco;
         this.nome = nome;
     }
-   public Supplier<double> precoComMarkUp = () -> preco*(1+percentualMarkUp);
-   public Consumer<double> atualizarMarkUp = x -> this.percentualMarkUp = (x/100);
+   public Supplier<Double> precoComMarkUp = () -> preco*(1+percentualMarkUp);
+   public Consumer<Double> atualizarMarkUp = x -> this.percentualMarkUp = (x/100);
 
     public String getNome() {
         return nome;
@@ -27,7 +27,7 @@ public class Produto {
         return preco;
     }
 
-    public void setPreco(double preco) {
+    public void setPreco(Double preco) {
         this.preco = preco;
     }
 
@@ -35,7 +35,7 @@ public class Produto {
         return percentualMarkUp;
     }
 
-    public void setPercentualMarkUp(double percentualMarkUp) {
+    public void setPercentualMarkUp(Double percentualMarkUp) {
         this.percentualMarkUp = percentualMarkUp;
     }
 
