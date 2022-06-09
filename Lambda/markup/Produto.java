@@ -10,8 +10,8 @@ public class Produto {
         this.preco = preco;
         this.nome = nome;
     }
-   public Supplier<Double> precoComMarkUp = () -> preco*(1+percentualMarkUp);
-   public Consumer<Double> atualizarMarkUp = x -> this.percentualMarkUp = (x/100);
+   public Supplier<Double> precoComMarkup = () -> preco*(1+percentualMarkUp);
+   public Consumer<Double> atualizarMarkup = x -> this.percentualMarkUp = (x/100);
 
     public String getNome() {
         return nome;
